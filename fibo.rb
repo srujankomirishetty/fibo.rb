@@ -1,21 +1,18 @@
-def fibonacci(n)
-    a = 0
-    b = 1
+def fin(n)
+a = 0
+b = 1
 
-    # Compute Fibonacci number in the desired position.
-    n.times do
+n.times {
   temp = a
   a = b
-  # Add up previous two numbers in sequence.
-  b = temp + b
-    end
+  b = temp + a
+}
+return a
 
-    return a
 end
-
-puts "Enter how many numbers to be printed"
-x=gets.chomp().to_i
-x.times do |n|
-    result = fibonacci(n)
-    puts result
-end
+ puts "Enter how many numbers you wanted to print"
+ x= Inetger(gets.chomp())
+ x.times do |n|
+ result=fin(n)
+ print result, " "
+ end
